@@ -1,7 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
- font-family: "Poppins", sans-serif;
- background-color: black ;
- color: #fff;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: #fff;
 }
 .header {
   margin-top: 50px;
@@ -11,72 +15,76 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   width: 100px;
   height: 100px;
   border-radius: 30px;
 }
-.cheked {
+.nav-link {
   padding: 10px;
-  border-bottom: 1px greenyellow solid;
-   margin-right: 45px;
-  font-size: 20px
-}
-.cheked-2 {
-  padding: 10px;
-  border-bottom: 1px greenyellow solid;
-   margin-right: 45px;
+  border-bottom: 1px transparent solid;
+  margin-right: 45px;
   font-size: 20px;
+  transition: border 300ms ease;
 }
-.cheked-3 {
-  padding: 10px;
-  border-bottom: 1px greenyellow solid;
-   margin-right: 45px;
-  font-size: 20px;
+
+.nav-link:hover {
+  border-color: greenyellow;
 }
-.header-link {
+
+.nav-bar {
   margin-right: 45px;
 }
-.header-btn {
-  margin-left: 500px;
+
+.feedback-btn {
   padding: 20px 30px;
   text-decoration: none;
   color: #fff;
   background-color: black;
   border: 2px greenyellow solid;
   border-radius: 30px;
+  transition: 300ms ease;
 }
+
+.feedback-btn:hover {
+  background-color: greenyellow;
+  color: black;
+}
+
 a {
   text-decoration: none;
   color: #fff;
 }
+
 .info {
-  padding-bottom: 100px;
-  padding-top: 100px;
-  margin-top: 300px;
+  padding: 50px 0;
+  margin-top: 50px;
   color: #fff;
   text-align: center;
   font-size: 25px;
   border: greenyellow 2px solid;
   border-radius: 30px;
 }
+
 @keyframes identifier {
   from {
-    margin-top: 600px;
+    opacity: 0;
+    transform: translate(0, 120px);
   }
   to {
-    margin-top: 300px;
+    opacity: 1;
+    transform: translate();
   }
 }
 .info {
   animation-name: identifier;
-}
-.info {
-  animation: some-animation;
-}
-.info {
-  animation-name: identifier;
-  animation-duration: 5s;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
   animation-direction: alternate;
 }
@@ -85,7 +93,7 @@ a {
   display: flex;
   justify-content: center;
   color: #fff;
-  padding-top: 300px;
+  margin-top: 50px;
 }
 .catalog-btn {
   display: flex;
@@ -93,7 +101,7 @@ a {
   font-size: 20px;
   border-bottom: 2px greenyellow solid;
   text-align: center;
-  padding-top: 299px;
+  padding-top: 50px;
 }
 .logo-item {
   height: 150px;
@@ -111,10 +119,9 @@ a {
   width: 500px;
   height: 150px;
   float: left;
-  border: 2px  greenyellow solid;
+  border: 2px greenyellow solid;
 }
 .catalog-info {
-  display: flex;
 }
 .address-map {
   margin: 300px;
@@ -125,11 +132,11 @@ a {
 }
 .btn {
   margin-bottom: 90px;
-  border-bottom:  greenyellow 2px solid;
+  border-bottom: greenyellow 2px solid;
 }
 .form-btn {
-text-align: center;
-margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .form {
   text-align: center;
@@ -144,28 +151,27 @@ margin-bottom: 50px;
   display: flex;
   justify-content: center;
   margin-bottom: 150p;
+  gap: 20px;
 }
 .logo-poc {
   width: 150px;
   height: 150px;
-  margin-left: 40px;
 }
 .mi-text {
-text-align: center;
-margin-left: 20px
+  text-align: center;
+  margin-left: 20px;
 }
 .mi-btn {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   border-bottom: 2px greenyellow solid;
 }
 .mi {
   display: flex;
-  justify-content: center;
   gap: 50px;
-  float: center;
   border: 2px solid greenyellow;
   border-radius: 30px;
+  padding: 10px 20px;
 }
 @keyframes dddd {
   from {
@@ -196,14 +202,27 @@ margin-left: 20px
   border: 2px solid greenyellow;
   border-radius: 30px;
 }
-@media  all (min-width: 992px) {
+@media all (min-width: 992px) {
   .logo {
-  width: 20px;
-  height: 20px;
-  border-radius: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
   }
 }
 .all {
   border: 2px solid greenyellow;
   border-radius: 30px;
+  padding: 5px 10px;
+}
+
+.text-input {
+  border-radius: 5px;
+  border: 1px solid greenyellow;
+  background-color: black;
+  height: 30px;
+}
+
+.text-input::placeholder {
+  color: grey;
+  font-size: 15px;
 }

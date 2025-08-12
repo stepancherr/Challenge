@@ -10,13 +10,13 @@
 <script src="script.js"></script>
   <header class="header">
       <img class="logo" src="img/logo2.jpeg">
-      <nav>
-        <div class="header-link">
-        <a href="#" class="cheked">Главная</a>    
-        <a href="#address" class="cheked-2">О нас</a>  
-        <a href="#catalog" class="cheked-3">Каталог</a> 
+      <nav class="navigation">
+        <div class="nav-bar">
+        <a href="#" class="nav-link">Главная</a>    
+        <a href="#address" class="nav-link">О нас</a>  
+        <a href="#catalog" class="nav-link">Каталог</a> 
         </div>
-        <a href="#form" class="header-btn">Обратная связь</a>  
+        <a href="#form" class="feedback-btn">Обратная связь</a>  
       </nav>
   </header>
   <main>
@@ -26,17 +26,17 @@
       <br>Самый выгодный прайс</br>
       <br>Лучшее качество товаров</br> 
     </p>
-    <p id="catalog">
+    <section id="catalog">
       <div class="catalog-btn"><h2>Наши товары</h2></div>
       <div class="catalog">
-    </p>
+    </>
     <div class="item">
     <img src="img/cat corm.jpeg" class="logo-item">
     <p class="catalog-info">
       Корм для котов и кошек YTYTYTY
-      <br>Доставлен из Италии</br>
-      <br> Имеет нежную текстуру</br>
-       <br>200RUB</br>
+      <br>Доставлен из Италии<br>
+      <br> Имеет нежную текстуру<br>
+       <br><a href="#">200RUB</a><br>
        </div>
     </p>
     <div class="item">
@@ -144,7 +144,7 @@
     <div class="form"><form action="mailto:ichernyshov_stepan@list.ru" method="post" enctype="text/plain">
         <p>
             <label for="name" class="all">Имя:</label><br>
-            <input type="text" id="name" name="name" required>
+            <input class="text-input" type="text" id="name" name="name" required placeholder="Введите имя">
         </p>
         <p>
             <label for="email" class="all">Email:</label><br>
