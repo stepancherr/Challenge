@@ -193,7 +193,7 @@ a {
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
-.form-btn {
+.form-bar {
   text-align: center;
   margin-top: 150px;
   border-bottom: 2px greenyellow solid;
@@ -220,9 +220,21 @@ a {
   border: 1px solid greenyellow;
   background-color: black;
   height: 30px;
+  color: #fff;
 }
 
 .text-input::placeholder {
   color: grey;
   font-size: 15px;
+}
+.form-btn {
+  background-color: black;
+  color: #fff;
+  border-radius: 30px;
+  border: 2px greenyellow solid;
+}
+.form-btn:hover {
+    transition: 300ms ease;
+    background-color: greenyellow;
+    color: black;
 }

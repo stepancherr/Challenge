@@ -140,7 +140,7 @@
    </div>
  </div>
   </div>
-  <h2 class="form-btn" id="form">Обратная связь</h2>
+  <h2 class="form-bar" id="form">Обратная связь</h2>
     <div class="form"><form action="mailto:ichernyshov_stepan@list.ru" method="post" enctype="text/plain">
         <p>
             <label for="name" class="all">Имя:</label><br>
@@ -148,18 +148,18 @@
         </p>
         <p>
             <label for="email" class="all">Email:</label><br>
-            <input type="email" id="email" name="email" required >
+            <input  class="text-input" type="email" id="email" name="email"  required  placeholder="Введите почту">
         </p>
         <p>
             <label for="phone" class="all">Телефон:</label><br>
-            <input type="tel" id="phone" name="phone">
+            <input  class="text-input" type="tel" id="tel" name="tel"  required  placeholder="Введите телефон">
         </p>
         <p>
             <label for="message" class="all">Сообщение:</label><br>
-            <textarea id="message" name="message" rows="4"></textarea>
+            <textarea class="text-input" type="message" id="massage" name="massage"  required  placeholder="Напишите текст"></textarea>
         </p>
         <p>
-            <input type="submit" value="Отправить">
+            <input type="submit" class="form-btn" value="Отправить">
         </p>
     </form>
     </div>
