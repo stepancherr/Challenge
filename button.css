@@ -1,0 +1,24 @@
+.feedback-btn {
+  padding: 20px 30px;
+  text-decoration: none;
+  color: #fff;
+  background-color: black;
+  border: 2px greenyellow solid;
+  border-radius: 30px;
+  transition: 300ms ease;
+}
+.feedback-btn:hover {
+  background-color: greenyellow;
+  color: black;
+}
+.form-btn {
+  background-color: black;
+  color: #fff;
+  border-radius: 30px;
+  border: 2px greenyellow solid;
+}
+.form-btn:hover {
+    transition: 300ms ease;
+    background-color: greenyellow;
+    color: black;
+}

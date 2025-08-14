@@ -1,0 +1,27 @@
+.form-bar {
+  text-align: center;
+  margin-top: 150px;
+  border-bottom: 2px greenyellow solid;
+}
+.form {
+  border: 2px solid greenyellow;
+  border-radius: 30px;
+}
+.all {
+  border: 2px solid greenyellow;
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+
+.text-input {
+  border-radius: 5px;
+  border: 1px solid greenyellow;
+  background-color: black;
+  height: 30px;
+  color: #fff;
+}
+
+.text-input::placeholder {
+  color: grey;
+  font-size: 15px;
+}
