@@ -36,3 +36,14 @@
 .catalog-info {
   margin: auto;
 }
+.btn-catalog {
+  background-color: black;
+  color: #fff;
+  border-radius: 30px;
+  border: 2px greenyellow solid;
+}
+.btn-catalog:hover {
+    transition: 300ms ease;
+    background-color: greenyellow;
+    color: black;
+}

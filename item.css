@@ -2,7 +2,10 @@ html {
   background-color: black;
   font-family: sans-serif;
 }
-
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
 .button {
   width: 3px;
   height: 3px;
@@ -31,4 +34,15 @@ filter: drop-shadow(1px 1px 20px greenyellow);
   display: block;
   text-align: center;
   color: white;
+}
+.btn {
+  background-color: black;
+  color: #fff;
+  border-radius: 30px;
+  border: 2px greenyellow solid;
+}
+.btn:hover {
+    transition: 300ms ease;
+    background-color: greenyellow;
+    color: black;
 }
