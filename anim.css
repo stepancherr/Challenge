@@ -34,3 +34,17 @@
   animation-iteration-count: 1;
   animation-direction: alternate;
 }
+@keyframes info {
+  from{
+    
+  }
+  to{
+    rotate: 345deg;
+  }
+}
+  .info-logo{
+    animation-name:info;
+    animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  }

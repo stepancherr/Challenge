@@ -47,3 +47,9 @@ filter: drop-shadow(1px 1px 20px greenyellow);
     background-color: greenyellow;
     color: black;
 }
+.footer {
+  margin-top: 30px;
+  color: black;
+  text-align: center;
+  background-color: chartreuse;
+}
